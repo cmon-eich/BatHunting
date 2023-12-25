@@ -1,5 +1,9 @@
 batcallsv14.db
 FailedAttempts
 Plots
+statistics
+.ipynb_checkpoints
+*.png
+*.csv
 .idea
 .idea/.gitignore
