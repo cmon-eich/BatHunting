@@ -1,49 +1,20 @@
-#1. Data Collection and Preprocessing:
+Fragen:
+- PCA nur auf Rohdaten oder auch auf den vorverarbeiteten (geflatteten Daten)?
+- Anzahl der filter pro Convolution Layer -> wenig auswirkung?
+- Mit der Datenmenge zum trainieren rumspielen? (Aktuell bis zu 500 samples von jeder Klasse)
 
-- Gather a dataset of spectrograms with their corresponding labels. You may need to label the data yourself or use pre-labeled data if available.
-- Preprocess the spectrograms, which may include resizing, normalizing, and converting them into a suitable format for your neural network.
+TODOs/Vorgehen:
+- adam optimizer ausprobieren (aktuell rms_prop, gibt es noch mehr (relevante/empfehlenswerte)?) stochastic grad descent
+- anzahl der layer stückweise erhöhen
+- vorbelegung von gewichten vorgeben -> nein
+- vortrainierte Modele ausprobieren
+- rms prop learning rate variieren
+- mit der aktivierungsfunktion rumspielen
+- batchsize variieren
 
-#2. Data Splitting:
+lernrate runtersetzen
 
-Split your dataset into three parts: training, validation, and testing sets. A common split is 70-80% for training, 10-15% for validation, and 10-15% for testing. This ensures you have data for training, tuning, and evaluating your model.
+- weighted learning -> unterrepräsentierte klassen (leicht) stärker gewichten
 
-#3.Data Augmentation (Optional):
 
-If your dataset is limited, you can use data augmentation techniques to artificially increase the diversity of your training data. This may include random rotations, shifts, and noise.
-
-#4. Build a Neural Network:
-
-- Choose a deep learning framework like TensorFlow or PyTorch to build your neural network.
-- Decide on the architecture of your neural network. For spectrogram classification, you might use a convolutional neural network (CNN) or a recurrent neural network (RNN), depending on your specific problem.
-- Design the input layer to match the shape of your spectrogram data.
-- Choose the number of layers, neurons, and activation functions for your neural network. Experiment with different architectures to find the best one for your problem.
-
-#5. Compile the Model:
-
-- Select an appropriate loss function for classification (e.g., categorical cross-entropy).
-- Choose an optimizer (e.g., Adam, SGD) and set the learning rate.
-- Define evaluation metrics (e.g., accuracy) to monitor during training.
-
-#6. Training:
-
-- Train your neural network using the training data. This involves feeding the spectrograms through the network, computing gradients, and updating the model's weights.
-- Monitor the training process using the validation data to prevent overfitting.
-- Experiment with hyperparameters, such as learning rate and batch size, to improve model performance.
-
-#7. Evaluation:
-
-- Once training is complete, evaluate your model's performance on the testing set to assess its accuracy and other relevant metrics.
-- Use confusion matrices, precision, recall, and F1-score to analyze the model's performance on different classes.
-
-#8. Fine-Tuning:
-
-If your model doesn't perform well, consider fine-tuning by adjusting hyperparameters, changing the architecture, or gathering more data.
-
-#9. Deployment:
-
-If your model performs satisfactorily, you can deploy it in your application for real-time classification.
-
-#10. Documentation and Reporting:
-
-- Document your project thoroughly, including the choice of architecture, hyperparameters, and any preprocessing steps.
-- Create a report summarizing your project, explaining your approach, and presenting the results.
+operner bild
