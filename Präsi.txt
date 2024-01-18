@@ -1,0 +1,8 @@
+Einleitung:
+Sweet Caroline Bat
+Mittelteil:
+Grafikkarten hassen diesen Trick (-> bild von out of memory error)
+Ende:
+Mit mehr Zeit und Ressourcen hätte man bestimmt noch bessere Ergebnisse erzielen können.
+Ausblick:
+Man kann noch mit der Aktivierungsfunktion rumspielen und vortrainierte Modelle ausprobieren
